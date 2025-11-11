@@ -19,7 +19,7 @@ UAW is a port and sequel to Heavy Armaments Industries, implementing new unique 
 
 Many thanks to Eschatologue for creating such a great mod.
 '''
-version: v0.8.5
+version: v0.8.4
 minGameVersion: 150
 repo: MiteMoisie/Unleashed-Armament-Workshop
 java: true
