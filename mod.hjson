@@ -1,23 +1,25 @@
-#the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Unleashed Armament Workshop"
+name: "uaw"
+author: "MiteMoisie"
+main: "UAW.UAWModLoader"
+subtitle: "Smokes and Thunder. Cordite and Steel"
+description:
+'''
+Unleashed Armament Workshop is just Unlimited Armament Works mod created by Eschatologue but updated for Mindustry v8 (build 152+). Do NOT use both mods at the same time.
 
-#the internal name of your mod
-name: "example-java-mod"
+UAW is a port and sequel to Heavy Armaments Industries, implementing new unique content to vanilla Mindustry :
+- 4 ressources (3 items, 1 liquid)
+- 10 turrets
+- 5 status effects
+- 2 unit factories
+- 5 units (3 with 3 upgrades, 2 with 2 upgrades)
+- 3 walls
+- 5 blocks for liquids
+- 18 factory blocks
 
-#your name
-author: "You"
-
-#the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
-
-#the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
-
-#the mod version
-version: 1.0
-
-#the minimum game build required to run this mod
+Many thanks to Eschatologue for creating such a great mod.
+'''
+version: v0.8.5
 minGameVersion: 150
-
-#this is a java mod
+repo: MiteMoisie/Unleashed-Armament-Workshop
 java: true
