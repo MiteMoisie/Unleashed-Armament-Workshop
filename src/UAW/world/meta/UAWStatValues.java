@@ -98,7 +98,7 @@ public class UAWStatValues {
 	public static StatValue items(boolean displayName, ItemStack... stacks){
 		return table -> {
 			for(ItemStack stack : stacks){
-				table.add(new ItemDisplay(stack.item, stack.amount, displayName)).padRight(5);
+				table.add(new ItemsDisplay(stack.item, stack.amount, displayName)).padRight(5);
 			}
 		};
 	}
@@ -106,7 +106,7 @@ public class UAWStatValues {
 	public static StatValue items(float timePeriod, ItemStack... stacks){
 		return table -> {
 			for(ItemStack stack : stacks){
-				table.add(new ItemDisplay(stack.item, stack.amount, timePeriod, true)).padRight(5);
+				table.add(new ItemsDisplay(stack.item, stack.amount, timePeriod, true)).padRight(5);
 			}
 		};
 	}
@@ -122,7 +122,7 @@ public class UAWStatValues {
 			for(int i = 0; i < list.size; i++){
 				Item item = list.get(i);
 
-				table.add(timePeriod <= 0 ? new ItemDisplay(item) : new ItemDisplay(item, 1, timePeriod, true)).padRight(5);
+				table.add(timePeriod <= 0 ? new ItemsDisplay(item) : new ItemsDisplay(item, 1, timePeriod, true)).padRight(5);
 
 				if(i != list.size - 1){
 					table.add("/");
