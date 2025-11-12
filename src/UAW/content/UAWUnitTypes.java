@@ -16,7 +16,7 @@ import arc.math.Mathf;
 import arc.math.geom.Rect;
 import arc.struct.*;
 import arc.struct.ObjectMap.Entry;
-import javax.validation.constraints.NotNull;
+import androidx.annotation.NonNull;
 import mindustry.ai.types.FlyingAI;
 import mindustry.content.*;
 import mindustry.entities.abilities.MoveEffectAbility;
@@ -118,7 +118,7 @@ public class UAWUnitTypes {
 		return idMap.get(type, -1);
 	}
 
-	public static <T extends UnitType> void registerPayloadSource(@NotNull Class<T> clz) {
+	public static <T extends UnitType> void registerPayloadSource(@NonNull Class<T> clz) {
 		var source = (PayloadSource) Blocks.payloadSource;
 		source.config((Class<UnitType>) clz,
 			(PayloadSource.PayloadSourceBuild build, UnitType type) -> {
